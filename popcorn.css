@@ -1,0 +1,27 @@
+main {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  top: 0;
+  z-index: 1;
+}
+
+.popcorn-up {
+  position: absolute;
+  transform: translateY(-100%);
+  transition: all 4s ease-in;
+  width: 50px;
+}
+
+.popcorn-down {
+  transform: translateY(110vh) !important;
+}
+
+main img {
+  display: block;
+  width: 100%;
+  transform: rotate(0deg);
+  transition: all 4s;
+}
